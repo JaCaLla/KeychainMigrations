@@ -8,4 +8,5 @@ iOS sample project that show how to handle keychain migrations. This is the base
 
 - **Xcode 15.0 or later**
 - **iOS 16.0 or later**
+- **Swift 6.0 **
 
