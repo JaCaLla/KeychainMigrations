@@ -60,6 +60,7 @@ class TrialViewModel: ObservableObject {
         
         let versionedTypes: [TrialInfoMigratable.Type] = [
             TrialInfoLatestModel.self,
+            TrialInfoV1.self,
             TrialInfo.self
         ]
         if let decoded = try? JSONDecoder().decode(TrialInfoLatestModel.self, from: data) {

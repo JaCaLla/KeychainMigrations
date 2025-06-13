@@ -33,6 +33,19 @@ struct TrialViewModelTest {
         // When
         let trialInfoStored = await sut.loadTrialInfo(key: sut.key)
         // Then
-        #expect(trialInfoStored?.version == 0)
+        #expect(trialInfoStored?.version == 1)
+    }
+    
+    @Test("Load LatestTrialInfo when previous stored TrialInfo V1")
+    func loadTrialInfoWhenV1() async throws {
+        // Given
+        let sut = await TrialViewModel()
+        await KeychainManager.shared.deleteKeychainData(for: sut.key)
+        let trialInfo = TrialInfoV1(startDate: Date.now, deviceId: UUID().uuidString, userId: UUID().uuidString)
+        await sut.saveMigrated(object: trialInfo, key: sut.key)
+        // When
+        let trialInfoStored = await sut.loadTrialInfo(key: sut.key)
+        // Then
+        #expect(trialInfoStored?.version == 1)
     }
 }
