@@ -11,7 +11,16 @@ import SwiftUI
 struct KeyChainMigrationsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            #if !RELEASE
+            if NSClassFromString("XCTestCase") != nil {
+                // TrialView onAppear interacts with Keychain and this causes random unit test execution
+                EmptyView()
+            } else {
+                TrialView()
+            }
+            #else
+            TrialView()
+            #endif
         }
     }
 }

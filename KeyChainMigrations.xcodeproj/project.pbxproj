@@ -14,19 +14,11 @@
 			remoteGlobalIDString = 5AD32D012DFB5398009030B0;
 			remoteInfo = KeyChainMigrations;
 		};
-		5AD32D1A2DFB539A009030B0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5AD32CFA2DFB5398009030B0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5AD32D012DFB5398009030B0;
-			remoteInfo = KeyChainMigrations;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5AD32D022DFB5398009030B0 /* KeyChainMigrations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyChainMigrations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD32D0F2DFB539A009030B0 /* KeyChainMigrationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyChainMigrationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AD32D192DFB539A009030B0 /* KeyChainMigrationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyChainMigrationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +30,6 @@
 		5AD32D122DFB539A009030B0 /* KeyChainMigrationsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = KeyChainMigrationsTests;
-			sourceTree = "<group>";
-		};
-		5AD32D1C2DFB539A009030B0 /* KeyChainMigrationsUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = KeyChainMigrationsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AD32D162DFB539A009030B0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +57,6 @@
 			children = (
 				5AD32D042DFB5398009030B0 /* KeyChainMigrations */,
 				5AD32D122DFB539A009030B0 /* KeyChainMigrationsTests */,
-				5AD32D1C2DFB539A009030B0 /* KeyChainMigrationsUITests */,
 				5AD32D032DFB5398009030B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +66,6 @@
 			children = (
 				5AD32D022DFB5398009030B0 /* KeyChainMigrations.app */,
 				5AD32D0F2DFB539A009030B0 /* KeyChainMigrationsTests.xctest */,
-				5AD32D192DFB539A009030B0 /* KeyChainMigrationsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +118,6 @@
 			productReference = 5AD32D0F2DFB539A009030B0 /* KeyChainMigrationsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5AD32D182DFB539A009030B0 /* KeyChainMigrationsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5AD32D292DFB539A009030B0 /* Build configuration list for PBXNativeTarget "KeyChainMigrationsUITests" */;
-			buildPhases = (
-				5AD32D152DFB539A009030B0 /* Sources */,
-				5AD32D162DFB539A009030B0 /* Frameworks */,
-				5AD32D172DFB539A009030B0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5AD32D1B2DFB539A009030B0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				5AD32D1C2DFB539A009030B0 /* KeyChainMigrationsUITests */,
-			);
-			name = KeyChainMigrationsUITests;
-			packageProductDependencies = (
-			);
-			productName = KeyChainMigrationsUITests;
-			productReference = 5AD32D192DFB539A009030B0 /* KeyChainMigrationsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -178,10 +133,7 @@
 					};
 					5AD32D0E2DFB539A009030B0 = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = 5AD32D012DFB5398009030B0;
-					};
-					5AD32D182DFB539A009030B0 = {
-						CreatedOnToolsVersion = 16.3;
+						LastSwiftMigration = 1630;
 						TestTargetID = 5AD32D012DFB5398009030B0;
 					};
 				};
@@ -202,7 +154,6 @@
 			targets = (
 				5AD32D012DFB5398009030B0 /* KeyChainMigrations */,
 				5AD32D0E2DFB539A009030B0 /* KeyChainMigrationsTests */,
-				5AD32D182DFB539A009030B0 /* KeyChainMigrationsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +167,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5AD32D0D2DFB539A009030B0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AD32D172DFB539A009030B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +190,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AD32D152DFB539A009030B0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +197,6 @@
 			isa = PBXTargetDependency;
 			target = 5AD32D012DFB5398009030B0 /* KeyChainMigrations */;
 			targetProxy = 5AD32D102DFB539A009030B0 /* PBXContainerItemProxy */;
-		};
-		5AD32D1B2DFB539A009030B0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5AD32D012DFB5398009030B0 /* KeyChainMigrations */;
-			targetProxy = 5AD32D1A2DFB539A009030B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -450,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7ZPDPWR8XU;
@@ -459,6 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jca.KeyChainMigrationsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyChainMigrations.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeyChainMigrations";
@@ -469,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7ZPDPWR8XU;
@@ -481,40 +416,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyChainMigrations.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeyChainMigrations";
-			};
-			name = Release;
-		};
-		5AD32D2A2DFB539A009030B0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7ZPDPWR8XU;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jca.KeyChainMigrationsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KeyChainMigrations;
-			};
-			name = Debug;
-		};
-		5AD32D2B2DFB539A009030B0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7ZPDPWR8XU;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jca.KeyChainMigrationsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KeyChainMigrations;
 			};
 			name = Release;
 		};
@@ -544,15 +445,6 @@
 			buildConfigurations = (
 				5AD32D272DFB539A009030B0 /* Debug */,
 				5AD32D282DFB539A009030B0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5AD32D292DFB539A009030B0 /* Build configuration list for PBXNativeTarget "KeyChainMigrationsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5AD32D2A2DFB539A009030B0 /* Debug */,
-				5AD32D2B2DFB539A009030B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
