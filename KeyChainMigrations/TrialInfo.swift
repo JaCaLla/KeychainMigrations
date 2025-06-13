@@ -6,11 +6,30 @@
 //
 import Foundation
 
-typealias TrialInfoLatestModel = TrialInfoV1
+typealias TrialInfoLatestModel = TrialInfoV2
 
 protocol TrialInfoMigratable:Codable {
     var version: Int { get }
     func migrate() -> TrialInfoMigratable?
+}
+
+// Current model (v2)
+struct TrialInfoV2: Codable, TrialInfoMigratable {
+    
+    var version: Int = 2
+    let startDate: Date
+    let deviceId: String
+    
+    static let defaultValue = TrialInfoV2(startDate: Date(), deviceId: UUID().uuidString)
+    
+    init(startDate: Date, deviceId: String) {
+        self.startDate = startDate
+        self.deviceId = deviceId
+    }
+    
+    func migrate() -> (any TrialInfoMigratable)? {
+       nil
+    }
 }
 
 // Current model (v1)
@@ -29,7 +48,7 @@ struct TrialInfoV1: Codable, TrialInfoMigratable {
     }
     
     func migrate() -> (any TrialInfoMigratable)? {
-        nil
+        TrialInfoV2(startDate: self.startDate, deviceId: self.deviceId)
     }
 }
 
